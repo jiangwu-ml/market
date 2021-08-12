@@ -2,10 +2,10 @@
 
 /*:root -> 获取根元素html*/
 :root {
-  --color-text: #666;
-  --color-high-text: #ff5777;
-  --color-tint: #ff8198;
-  --color-background: #fff;
+  --color-text: rgb(17, 16, 16);
+  --color-high-text: #5776ff;
+  --color-tint: #3c61b0;
+  --color-background: rgb(187, 185, 185);
   --font-size: 14px;
   --line-height: 1.5;
 }
@@ -53,5 +53,8 @@ a {
 
 .right {
   float: right;
+}
+img{
+  vertical-align: top;
 }
 

@@ -14,17 +14,17 @@
 
 
 <script >
-import tabBar from '@/components/tabBar/TabBar.vue';
-import tabBarItem from '@/components/tabBar/TabBarItem.vue';
-require('@font/iconfont.js');
+import tabBar from '@/components/common/tabBar/TabBar.vue';
+import tabBarItem from '@/components/common/tabBar/TabBarItem.vue';
+require('@/assets/font/iconfont.js');
 
 
 export default {
   components: { tabBar,tabBarItem },
   data() {
     return {
-      tb:[['icon-shouye iconfont','首页','/home'],['icon-faxian iconfont','发现','/find'],['icon-chuangzuo iconfont','创作','/create'],['icon-wode iconfont','我的','/profil']],
-      tb_color:'green',
+      tb:[['icon-home iconfont','首页','/home'],['icon-cascades iconfont','分类','/category'],['icon-cart iconfont','购物车','/cart'],['icon-my iconfont','我的','/profil']],
+      tb_color:'#5776ff',
       tb_comm_color:'balck',
     };
   },
@@ -32,9 +32,8 @@ export default {
 </script>
 <style scoped>
 
-@import '../assets/font/iconfont.css';
-
-  #nav{
+@import '../../assets/font/iconfont.css';
+#nav{
     position: fixed;
     bottom: 0;
     left: 0;
@@ -46,5 +45,6 @@ export default {
 }
 .iconfont{
   margin-top: 5px;
+  font-size: 24px;
 }
 </style>
