@@ -5,7 +5,7 @@
   --color-text: rgb(17, 16, 16);
   --color-high-text: #5776ff;
   --color-tint: #3c61b0;
-  --color-background: rgb(187, 185, 185);
+  --color-background: rgb(228, 226, 226);
   --font-size: 14px;
   --line-height: 1.5;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 a {
-  color: var(--color-text);
+  /* color: var(--color-text); */
   text-decoration: none;
 }
 

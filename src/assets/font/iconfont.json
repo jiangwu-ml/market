@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "3098259",
+      "name": "店铺",
+      "font_class": "dianpu",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "15838474",
+      "name": "favorite",
+      "font_class": "favorite",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "15838533",
+      "name": "smile",
+      "font_class": "smile",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "15838561",
+      "name": "arrow-left-bold",
+      "font_class": "arrow-left-bold",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "15838618",
+      "name": "top-filling",
+      "font_class": "top-filling",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "15838461",
+      "name": "direction-up",
+      "font_class": "direction-up",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
       "icon_id": "30444",
       "name": "cascades",
       "font_class": "cascades",

@@ -4,8 +4,12 @@
       <swiper ref="mySwiper"
               :options="swiperOptions">
         <swiper-slide v-for="(item,index) in picList"
-                      :key="index"><a :href="item.link"><img :src="item.image"
-                 @load="swiperImageLoad"></a></swiper-slide>
+                      :key="index">
+          <a href="#">
+            <img :src="item"
+                 @load="loadswiperimg">
+          </a>
+        </swiper-slide>
         <div class="swiper-pagination"
              slot="pagination"></div>
       </swiper>
@@ -14,7 +18,7 @@
 </template>
 <script>
 export default {
-  name: 'homeswiper', // 此处不能用Swiper作为name，否则报错
+  name: 'detailswiper', // 此处不能用Swiper作为name，否则报错
   data() {
     return {
       swiperOptions: {
@@ -31,8 +35,8 @@ export default {
     },
   },
   methods: {
-    swiperImageLoad() {
-      this.$emit('swiperImageLoad')
+    loadswiperimg() {
+      this.$emit('loadimg')
     },
   },
 }
@@ -40,8 +44,16 @@ export default {
 <style  scoped>
 .swiper-slide img {
   width: 100%;
+  /* height: 100%; */
+}
+.wrapper {
+  height: 40vh;
 }
 .wrapper .swiper-pagination-bullet-active {
   background-color: #fff;
+}
+/* 调整高度x */
+.swiper-container {
+  height: 100%;
 }
 </style>

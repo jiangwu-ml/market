@@ -6,19 +6,16 @@
 <script>
 export default {
   name: 'TabBar',
-};
+}
 </script>
 <style>
-  #tabbar-w{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
+#tabbar-w {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 
-    height: 50px;
-    width: 100%;
-    
-  }
-  
-  
+  height: 50px;
+  width: 100%;
+}
 </style>

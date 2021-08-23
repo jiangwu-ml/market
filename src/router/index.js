@@ -4,13 +4,14 @@ import Home from '@/views/Home.vue'
 const Profil = ()=>import('@/views/Profil.vue')
 const  Cart = ()=>import('@/views/Cart.vue')
 const Category = ()=>import('@/views/Category.vue')
+const Detail = ()=>import('@/views/Detail.vue')
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect:'/home'
+    redirect: '/home'
   },
   {
     path: '/home',
@@ -20,17 +21,22 @@ const routes = [
   {
     path: '/profil',
     name: 'Profil',
-    component:Profil,
+    component: Profil,
   },
   {
     path: '/cart',
     name: 'Cart',
-    component:Cart
+    component: Cart
   },
   {
     path: '/category',
     name: 'Category',
-    component:Category
+    component: Category
+  },
+  {
+    path: "/detail/:iid",
+    name: 'Detail',
+    component:Detail
   }
 
 ]
